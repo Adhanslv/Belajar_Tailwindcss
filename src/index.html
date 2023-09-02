@@ -47,7 +47,7 @@
 						<button
 							class="grow bg-ungu px-8 py-4 font-bold text-white rounded-full text-sm"
 						>
-							Login admin
+							<i class="ti ti-circle-chevrons-right text-sm"></i> Login admin
 						</button>
 					</div>
 				</div>
@@ -61,12 +61,12 @@
 				x-transition:leave="transition ease-in duration-300"
 				x-transition:leave-start="opacity-100 scale-100"
 				x-transition:leave-end="opacity-0 scale-90"
-				class="z-50 fixed bottom-0 right-0 left-0 bg-white border lg:hidden"
+				class="z-50 fixed bottom-0 right-0 left-0 border lg:hidden p-4"
 			>
 				<ul class="flex justify-evenly gap-3">
 					<li>
 						<button
-							class="text-grey opacity-50 flex flex-col items-center text-base gap-3"
+							class="text-grey opacity-50 flex flex-col items-center text-base gap-2"
 						>
 							<i class="ti ti-home text-2xl"></i>
 							<span class="text-grey opacity-50 text-base font-normal"
@@ -75,18 +75,20 @@
 						</button>
 					</li>
 					<li>
-						<button
-							class="text-grey opacity-50 flex flex-col items-center text-base gap-3"
-						>
-							<i class="ti ti-file-description text-2xl"></i>
-							<span class="text-grey opacity-50 text-base font-normal"
-								>Berita</span
+						<a href="#hero">
+							<button
+								class="text-grey opacity-50 flex flex-col items-center text-base gap-2"
 							>
-						</button>
+								<i class="ti ti-file-description text-2xl"></i>
+								<span class="text-grey opacity-50 text-base font-normal"
+									>Berita</span
+								>
+							</button>
+						</a>
 					</li>
 					<li>
 						<button
-							class="text-grey opacity-50 flex flex-col items-center text-base gap-3"
+							class="text-grey opacity-50 flex flex-col items-center text-base gap-2"
 						>
 							<i class="ti ti-brand-google-maps text-2xl"></i>
 							<span class="text-grey opacity-50 text-base font-normal"
@@ -96,7 +98,7 @@
 					</li>
 					<li>
 						<button
-							class="text-grey opacity-50 flex flex-col items-center text-base gap-3"
+							class="text-grey opacity-50 flex flex-col items-center text-base gap-2"
 						>
 							<i class="ti ti-address-book text-2xl"></i>
 							<span class="text-grey opacity-50 text-base font-normal"
@@ -107,7 +109,7 @@
 					<li>
 						<button
 							@click="open = !open"
-							class="text-grey opacity-50 flex flex-col items-center text-base gap-3"
+							class="text-grey opacity-50 flex flex-col items-center text-base gap-2"
 						>
 							<i class="fa-solid fa-bars text-2xl"></i>
 							<span class="text-grey opacity-50 text-base font-normal"
@@ -134,9 +136,10 @@
 				</div>
 			</div>
 		</nav>
+		<!-- End Navbar -->
 
 		<!-- Hero Section -->
-		<section>
+		<section id="hero">
 			<div class="container px-4 py-4 lg:py-16 mx-auto">
 				<div class="grid grid-cols-12 items-center xl:ml-20">
 					<div class="col-span-12 lg:col-span-4 order-2 lg:order-1">
@@ -176,10 +179,105 @@
 						</div>
 					</div>
 					<div class="col-span-12 lg:col-span-8 order-1 lg:order-2">
-						<div><img src="/img/logo.png" alt="" class="w-full" /></div>
+						<div>
+							<img src="/img/logo.png" alt="" class="w-full" />
+						</div>
+					</div>
+					<div class="col-span-12 py-8 order-3">
+						<div
+							class="flex flex-wrap justify-center gap-6 sm:gap-7 lg:justify-between xl:-ml-20 xl:justify-evenly"
+						>
+							<div>
+								<img src="/img/tripadviso.svg" class="h-5 sm:h-8" alt="" />
+							</div>
+							<div>
+								<img src="/img/expedia.svg" class="h-5 sm:h-8" alt="" />
+							</div>
+							<div>
+								<img src="/img/booking.svg" class="h-5 sm:h-8" alt="" />
+							</div>
+							<div>
+								<img src="/img/airbnb.svg" class="h-5 sm:h-8" alt="" />
+							</div>
+							<div>
+								<img src="/img/rbits.svg" class="h-5 sm:h-8" alt="" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!-- End Hero Section -->
+
+		<!-- Service Section -->
+		<section class="py-16 overflow-x-hidden" id="card">
+			<div class="container mx-auto xl:ml-24 px-3">
+				<div class="grid grid-cols-12 items-center">
+					<!-- Left section -->
+					<div class="lg:col-span-4 col-span-12 flex gap-4 flex-col">
+						<span
+							class="text-ungu font-bold leading-tight lg:text-start text-base sm:text-2xl text-center"
+							>SERVICE</span
+						>
+						<h1
+							class="text-grey font-bold leading-tight sm:text-5xl text-3xl lg:text-start text-center"
+						>
+							Our top value categories for you
+						</h1>
+					</div>
+					<div
+						class="lg:col-span-8 col-span-12 flex flex-col sm:flex-row gap-5 sm:w-auto lg:mt-0 lg:w-screen sm:mt-16 mt-8"
+					>
+						<div
+							class="flex justify-center gap-16 flex-col items-center w-full sm:w-[350px] rounded-[32px] border lg:p-16 p-10 bg-white"
+						>
+							<div><img src="/img/destination 1.svg " alt="" /></div>
+							<div class="flex gap-8 flex-col">
+								<h3 class="font-bold text-grey text-lg text-center">
+									Best Tour Guide
+								</h3>
+								<p
+									class="text-lg leading-relaxed text-grey opacity-50 text-center"
+								>
+									Lorem ipsum dolor sit amet consectetur adipisicing.
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex justify-center gap-16 flex-col items-center w-full sm:w-[350px] rounded-[32px] border lg:p-16 p-10 bg-white"
+						>
+							<div><img src="/img/booking 1.svg  " alt="" /></div>
+							<div class="flex gap-8 flex-col">
+								<h3 class="font-bold text-grey text-lg text-center">
+									Best Tour Guide
+								</h3>
+								<p
+									class="text-lg leading-relaxed text-grey opacity-50 text-center"
+								>
+									Lorem ipsum dolor sit amet consectetur adipisicing.
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex justify-center gap-16 flex-col items-center w-full sm:w-[350px] rounded-[32px] border lg:p-16 p-10 bg-white"
+						>
+							<div><img src="/img/cloudy 1.svg " alt="" /></div>
+							<div class="flex gap-8 flex-col">
+								<h3 class="font-bold text-grey text-lg text-center">
+									Best Tour Guide
+								</h3>
+								<p
+									class="text-lg leading-relaxed text-grey opacity-50 text-center"
+								>
+									Lorem ipsum dolor sit amet consectetur adipisicing.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Service Section -->
 	</body>
 </html>
+`
