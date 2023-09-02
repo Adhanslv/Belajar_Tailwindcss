@@ -1,0 +1,21 @@
+{
+  "name": "baru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "alpine": "npx esbuild src/script.js --outfile=dist/script.js --bundle --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.0",
+    "esbuild": "^0.19.2"
+  }
+}
